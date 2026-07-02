@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer | GreenFuture Initiative</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header-top">
+        Student Name: Abraham Mensah | Index Number: BC/ITS/25/204
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="GreenFuture Initiative Logo">
+                <h1>GreenFuture</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-title">
+            <h2>Join Our Movement</h2>
+            <p>Become a volunteer and help us make a tangible difference in our environment.</p>
+        </section>
+
+        <section id="volunteer-info">
+            <h3>Volunteer Opportunities</h3>
+            <p>We are always looking for dedicated individuals to help with our various initiatives. Whether you're interested in field work, education, or administrative support, there's a place for you at GreenFuture.</p>
+            <ul style="margin: 20px 0; padding-left: 20px; list-style: disc;">
+                <li>Tree Planting and Reforestation teams</li>
+                <li>Coastal and Urban cleanup crews</li>
+                <li>Environmental education workshop facilitators</li>
+                <li>Social media and digital advocacy assistants</li>
+                <li>Event coordination and logistical support</li>
+            </ul>
+        </section>
+
+        <section id="volunteer-form">
+            <div class="form-container">
+                <h3 style="margin-bottom: 20px; text-align: center;">Volunteer Registration Form</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="grid-container" style="gap: 20px;">
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" required min="13" max="100">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Key Skills</label>
+                        <textarea id="skills" name="skills" rows="4" placeholder="Tell us about your skills (e.g., teaching, gardening, tech, etc.)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="availability">Availability</label>
+                        <select id="availability" name="availability" required>
+                            <option value="">Select Availability</option>
+                            <option value="weekdays">Weekdays</option>
+                            <option value="weekends">Weekends</option>
+                            <option value="evenings">Evenings</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Submit Application</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GreenFuture Initiative. Designed by Abraham Mensah (BC/ITS/25/204).</p>
+        </div>
+    </footer>
+</body>
+</html>

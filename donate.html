@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | GreenFuture Initiative</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header-top">
+        Student Name: Abraham Mensah | Index Number: BC/ITS/25/204
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="GreenFuture Initiative Logo">
+                <h1>GreenFuture</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-title">
+            <h2>Support Our Cause</h2>
+            <p>Your contributions directly fund our environmental restoration and community programs.</p>
+        </section>
+
+        <section id="why-donate">
+            <div class="flex-container" style="align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h3>Why Your Support Matters</h3>
+                    <p>Every donation, no matter the size, helps us take one step closer to a sustainable future. Your funds are used for:</p>
+                    <ul style="margin: 20px 0; padding-left: 20px; list-style: disc;">
+                        <li>Purchasing saplings for reforestation ($10 plants 5 trees)</li>
+                        <li>Maintaining solar equipment in rural schools</li>
+                        <li>Funding research into local climate solutions</li>
+                        <li>Providing tools and safety gear for our volunteers</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 300px; text-align: center;">
+                    <div class="card" style="padding: 30px; background: var(--primary-color); color: white;">
+                        <h4>Total Impact to Date</h4>
+                        <p style="font-size: 2.5rem; font-weight: bold; margin: 10px 0;">$2.5M+</p>
+                        <p>Funds raised and invested in environmental projects since 2010.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donation-form">
+            <div class="form-container">
+                <h3 style="margin-bottom: 20px; text-align: center;">Make a Donation</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label>Select Amount (USD)</label>
+                        <div class="flex-container" style="gap: 10px; margin-top: 10px;">
+                            <label style="flex: 1; border: 1px solid #ddd; padding: 10px; text-align: center; cursor: pointer; border-radius: 5px;"><input type="radio" name="amount" value="10"> $10</label>
+                            <label style="flex: 1; border: 1px solid #ddd; padding: 10px; text-align: center; cursor: pointer; border-radius: 5px;"><input type="radio" name="amount" value="50"> $50</label>
+                            <label style="flex: 1; border: 1px solid #ddd; padding: 10px; text-align: center; cursor: pointer; border-radius: 5px;"><input type="radio" name="amount" value="100"> $100</label>
+                            <label style="flex: 1; border: 1px solid #ddd; padding: 10px; text-align: center; cursor: pointer; border-radius: 5px;"><input type="radio" name="amount" value="other"> Other</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-name">Full Name</label>
+                        <input type="text" id="donor-name" name="donor-name" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-email">Email Address</label>
+                        <input type="email" id="donor-email" name="donor-email" required placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <select id="payment-method" name="payment-method" required>
+                            <option value="">Select Method</option>
+                            <option value="credit-card">Credit / Debit Card</option>
+                            <option value="momo">Mobile Money</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Leave a message with your donation"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%; background-color: var(--secondary-color);">Complete Donation</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GreenFuture Initiative. Designed by Abraham Mensah (BC/ITS/25/204).</p>
+        </div>
+    </footer>
+</body>
+</html>

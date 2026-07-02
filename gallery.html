@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | GreenFuture Initiative</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 250px;
+            gap: 15px;
+            padding: 20px 0;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(46, 125, 50, 0.8);
+            color: white;
+            padding: 10px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+        Student Name: Abraham Mensah | Index Number: BC/ITS/25/204
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="GreenFuture Initiative Logo">
+                <h1>GreenFuture</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-title">
+            <h2>Our Gallery</h2>
+            <p>Capturing moments of change and environmental beauty from our various activities.</p>
+        </section>
+
+        <section>
+            <div class="gallery-grid">
+                 <div class="gallery-item">
+                    <img src="images/costal.jpg" alt="Beach Cleanup">
+                    <div class="gallery-overlay">Community Beach Cleanup</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Climate Education Workshop.jpg" alt="Classroom Education">
+                    <div class="gallery-overlay">Climate Education Workshop</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Water and Sanitation.png" alt="Water Sanitation Project">
+                    <div class="gallery-overlay">Clean Water Project</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/rooftop.jpg" alt="Rooftop Garden">
+                    <div class="gallery-overlay">Urban Rooftop Farming</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Community Development.png" alt="Tree Planting Activity">
+                    <div class="gallery-overlay">Community Development</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Green and Renewable Energy.png" alt="Solar Installation">
+                    <div class="gallery-overlay">Green and Renewable Energy</div>
+                </div>
+               
+                <div class="gallery-item">
+                    <img src="images/Environmental sustanability.png" alt="En
+                    ">
+                    <div class="gallery-overlay">Symbol of Hope</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Climate Change Awareness.png" alt="climate change">
+                    <div class="gallery-overlay">climate Change Awareness</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GreenFuture Initiative. Designed by Abraham Mensah (BC/ITS/25/204).</p>
+        </div>
+    </footer>
+</body>
+</html>
